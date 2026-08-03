@@ -175,28 +175,3 @@ npm run dev
 ├── package.json         # Workspace Monorepo Orchestrator
 └── README.md
 ```
-
----
-
-## Deployment Guide
-
-### Backend (Render / Railway)
-1. Push this project to GitHub.
-2. Link your repository to Render/Railway.
-3. Set base directory to `server/`.
-4. Set environment variables matching your `.env` credentials.
-5. Deploy using Build Command `npm install && npm run build` and Start Command `npm run start`.
-
-### Frontend (Vercel)
-1. Deploy via Vercel dashboard.
-2. Select root workspace directory and configure `client/` as root directory.
-3. Configure rewrite rules in `vercel.json` if proxying API calls to backend:
-   ```json
-   {
-      "rewrites": [
-        { "source": "/api/:path*", "destination": "https://wextalentbackend.onrender.com/api/:path*" }
-      ]
-   }
-   ```
-4. Deploy and view live page.
-#   w e x a t a l e n t  
