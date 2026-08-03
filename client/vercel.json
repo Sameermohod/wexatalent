@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://your-backend-api-production-url.com/api/:path*"
+      "destination": "https://wextalentbackend.onrender.com/api/:path*"
     }
   ]
 }
